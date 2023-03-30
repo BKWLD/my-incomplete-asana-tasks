@@ -28,7 +28,7 @@
 				const el = findElCallback()
 				if (!el) return
 				clearTimeout(clearIntervalId)
-				setTimeout(() => resolve(el), 10) // Wait a tick
+				resolve(el)
 			}, 100)
 		})
 	}
