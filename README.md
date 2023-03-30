@@ -4,3 +4,5 @@ A self executing JS function that filters a project to the incomplete tasks assi
 
 1. Bookmark an Asana project page
 2. Edit the bookmark, pasting in the contents of [script.min.js](./script.min.js)
+
+I may make this a Chrome extension in the future.
