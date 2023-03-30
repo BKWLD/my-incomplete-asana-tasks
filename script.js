@@ -27,7 +27,6 @@
 			const clearIntervalId = setInterval(() => {
 				const el = findElCallback()
 				if (!el) return
-				console.log(el)
 				clearTimeout(clearIntervalId)
 				setTimeout(() => resolve(el), 10) // Wait a tick
 			}, 100)
