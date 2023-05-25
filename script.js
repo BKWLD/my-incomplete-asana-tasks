@@ -33,26 +33,15 @@
 		})
 	}
 
-	// Open menu
+	// Open menu, Click on "Just my tasks", and close it
 	(await waitFor(() => findButton('Filter'))).click();
-
-	// Click on "Just my tasks"
 	(await waitFor(() => findButton('Just my tasks'))).click();
-
-	// Open the filter again
 	(await waitFor(() => findButton('Filter'))).click();
-
-	// Choose to add a completion status filter
-	(await waitFor(() => findButton('Add filter'))).click();
-	(await waitFor(() => findMenuOption('Completion'))).click();
-
-	// Apply the default selection of "Incomplete tasks"
-	(await waitFor(() => findButton('Apply'))).click();
 
 	// Sort by priority
 	(await waitFor(() => findButton('Sort'))).click();
 	(await waitFor(() => findButton('Add sort'))).click();
 	(await waitFor(() => findMenuOption('Task Status'))).click();
-	(await waitFor(() => findButton('Apply'))).click();
+	(await waitFor(() => findButton('Sort'))).click();
 
 })()
